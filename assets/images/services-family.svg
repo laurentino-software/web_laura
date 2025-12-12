@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" role="img" aria-label="Family abstract illustration">
+  <defs>
+    <linearGradient id="familyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffaf0"/>
+      <stop offset="100%" stop-color="#eaf3ff"/>
+    </linearGradient>
+    <linearGradient id="parentA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6fc3ff"/>
+      <stop offset="100%" stop-color="#3ca4ff"/>
+    </linearGradient>
+    <linearGradient id="parentB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb482"/>
+      <stop offset="100%" stop-color="#ff857a"/>
+    </linearGradient>
+    <linearGradient id="child" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8d4ff"/>
+      <stop offset="100%" stop-color="#beb3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="520" rx="48" fill="url(#familyBg)"/>
+  <ellipse cx="410" cy="440" rx="310" ry="80" fill="#d9f4ff" opacity="0.6"/>
+  <path d="M230 420 Q230 320 300 280 Q340 220 320 180 Q280 160 250 200 Q210 250 210 320 Q210 380 240 420" fill="url(#parentA)" opacity="0.8"/>
+  <path d="M590 420 Q590 320 520 280 Q480 220 500 180 Q540 160 570 200 Q610 250 610 320 Q610 380 580 420" fill="url(#parentB)" opacity="0.8"/>
+  <path d="M350 430 Q350 330 410 310 Q450 270 430 230 Q390 210 360 240 Q320 280 320 340 Q320 390 340 430" fill="url(#child)" opacity="0.9"/>
+  <path d="M470 430 Q470 330 410 310 Q370 270 390 230 Q430 210 460 240 Q500 280 500 340 Q500 390 480 430" fill="#ffe3f2" opacity="0.9"/>
+  <circle cx="270" cy="210" r="50" fill="#6fc3ff" opacity="0.6"/>
+  <circle cx="550" cy="210" r="50" fill="#ffb482" opacity="0.6"/>
+  <circle cx="410" cy="250" r="48" fill="#f8d4ff"/>
+</svg>

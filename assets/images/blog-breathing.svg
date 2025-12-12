@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-label="Calming breathing illustration">
+  <defs>
+    <linearGradient id="breathingBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f8ff"/>
+      <stop offset="100%" stop-color="#fef5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="36" fill="url(#breathingBg)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M120 320 Q220 200 320 320 T520 320 T640 320" stroke="#9fc7ff" stroke-width="24" opacity="0.55"/>
+    <path d="M120 280 Q220 160 320 280 T520 280 T640 280" stroke="#6dd0cb" stroke-width="18" opacity="0.6"/>
+    <path d="M120 240 Q220 120 320 240 T520 240 T640 240" stroke="#ffd6e8" stroke-width="18" opacity="0.55"/>
+    <path d="M120 200 Q220 80 320 200 T520 200 T640 200" stroke="#ffb3bc" stroke-width="14" opacity="0.6"/>
+  </g>
+  <circle cx="360" cy="180" r="92" fill="#fff" opacity="0.7"/>
+  <circle cx="360" cy="180" r="60" fill="#c7f3f0" opacity="0.8"/>
+  <path d="M300 180 Q360 120 420 180 Q360 240 300 180 Z" fill="#9fc7ff" opacity="0.6"/>
+</svg>

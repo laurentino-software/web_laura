@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preguntas frecuentes sobre las sesiones de psicología: duración, cancelaciones, terapia online y confidencialidad.">
+    <title>Preguntas frecuentes · Laura Benítez Psicología</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Ir al contenido principal</a>
+
+    <header class="site-header" id="top">
+        <nav class="primary-nav" aria-label="Idioma y navegación principal">
+            <div class="brand">
+                <img src="../assets/images/hero-wave.svg" alt="Logotipo en forma de onda" class="brand-mark" loading="lazy">
+                <span class="brand-name">Laura Benítez Psicología</span>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+            <ul class="nav-links" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html" aria-current="page">FAQ</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="legal.html">Aviso legal</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="../en/faq.html" hreflang="en" lang="en">English</a>
+                <span aria-hidden="true">·</span>
+                <span class="active" lang="es">Español</span>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="section" id="faq">
+            <div class="section-header">
+                <div class="section-pretitle">Resuelve tus dudas</div>
+                <h2>Preguntas frecuentes</h2>
+                <p>Si necesitas más información no dudes en escribirme. Estaré encantada de ayudarte a encontrar la modalidad y ritmo adecuados para ti.</p>
+            </div>
+            <div class="faq-list" data-container="faq">
+                <details>
+                    <summary>¿Cuál es la duración de las sesiones?</summary>
+                    <p>Las sesiones individuales duran 50 minutos. En pareja y familia disponemos de 70 minutos para trabajar con calma y poder escuchar a todas las partes implicadas.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo funciona la política de cancelación?</summary>
+                    <p>Las cancelaciones o cambios deben avisarse con al menos 24 horas de antelación. De lo contrario, la sesión se dará por realizada para poder respetar la agenda.</p>
+                </details>
+                <details>
+                    <summary>¿Qué diferencia hay entre terapia online y presencial?</summary>
+                    <p>La terapia online ofrece flexibilidad horaria y permite que mantengamos la continuidad incluso si viajas. Utilizo plataformas seguras. En presencial trabajamos en mi consulta en Gràcia, un espacio cálido y confidencial.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo se protege mi confidencialidad?</summary>
+                    <p>Toda la información compartida es confidencial de acuerdo con el código deontológico del COPC y la normativa europea GDPR. Utilizo herramientas cifradas y almacenamiento seguro.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-name">Laura Benítez Psicología</span>
+                <p>Acompañamiento terapéutico integrativo para personas, parejas y familias. Presencial en Barcelona y online.</p>
+            </div>
+            <div class="footer-links">
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-meta">
+                <a href="legal.html">Aviso legal y privacidad</a>
+                <a href="../en/faq.html">English version</a>
+                <p>© 2025 Laura Benítez · Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('#menu');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navMenu.toggleAttribute('data-open');
+        });
+    }
+    </script>
+</body>
+</html>

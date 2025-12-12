@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 1020" role="img" aria-label="Illustrated portrait of a smiling therapist">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f0ff"/>
+      <stop offset="100%" stop-color="#e6fbf5"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="1020" rx="120" fill="url(#bgGradient)"/>
+  <circle cx="410" cy="280" r="180" fill="#ffe6d1"/>
+  <path d="M250 750 Q410 880 570 750 L600 960 Q410 1030 220 960 Z" fill="#fff"/>
+  <path d="M300 520 Q410 560 520 520 L540 720 Q410 780 280 720 Z" fill="#fefefe"/>
+  <path d="M410 140 C520 140 610 230 610 360 Q610 500 410 500 Q210 500 210 360 Q210 230 300 140 Z" fill="#ffd6b0"/>
+  <path d="M260 220 Q320 120 420 120 Q480 120 540 160 Q620 200 620 320 Q620 360 600 420 Q600 360 540 320 Q520 440 410 440 Q300 440 260 320 Q240 360 220 420 Q200 260 260 220 Z" fill="#2f2a44"/>
+  <circle cx="340" cy="320" r="18" fill="#2f2a44"/>
+  <circle cx="480" cy="320" r="18" fill="#2f2a44"/>
+  <path d="M360 360 Q410 400 460 360" stroke="#2f2a44" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M320 430 Q410 480 500 430" fill="#ffd6b0"/>
+  <path d="M320 430 Q410 500 500 430" stroke="#f9b285" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M210 700 Q410 840 610 700" fill="#c8ddff" opacity="0.55"/>
+</svg>

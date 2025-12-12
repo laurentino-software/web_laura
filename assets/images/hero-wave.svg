@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract soothing gradient wave">
+  <defs>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde2ff"/>
+      <stop offset="45%" stop-color="#c9f1ff"/>
+      <stop offset="100%" stop-color="#bfead8"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="80%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#fff6e5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffd9b8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#waveGradient)"/>
+  <circle cx="900" cy="180" r="260" fill="url(#sunGlow)"/>
+  <path d="M0 520 Q200 480 400 520 T800 510 T1200 520 V800 H0 Z" fill="#f7f5ff" opacity="0.8"/>
+  <path d="M0 600 Q220 560 440 600 T880 620 T1200 610 V800 H0 Z" fill="#e8fff4" opacity="0.9"/>
+  <path d="M0 680 Q240 640 480 680 T960 690 T1200 700 V800 H0 Z" fill="#d8f6ff" opacity="0.9"/>
+</svg>

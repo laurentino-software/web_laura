@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contacta con Laura Benítez Psicología: formulario, teléfono, correo y ubicación en Gràcia, Barcelona.">
+    <title>Contacto · Laura Benítez Psicología</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Ir al contenido principal</a>
+
+    <header class="site-header" id="top">
+        <nav class="primary-nav" aria-label="Idioma y navegación principal">
+            <div class="brand">
+                <img src="../assets/images/hero-wave.svg" alt="Logotipo en forma de onda" class="brand-mark" loading="lazy">
+                <span class="brand-name">Laura Benítez Psicología</span>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+            <ul class="nav-links" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+                <li><a href="legal.html">Aviso legal</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="../en/contact.html" hreflang="en" lang="en">English</a>
+                <span aria-hidden="true">·</span>
+                <span class="active" lang="es">Español</span>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="section" id="contacto">
+            <div class="section-header">
+                <div class="section-pretitle">Hablemos</div>
+                <h2>Contacto</h2>
+                <p>¿Tienes dudas o deseas coordinar una primera sesión exploratoria gratuita de 20 minutos? Completa el formulario o llámame directamente.</p>
+            </div>
+            <div class="contact-layout" data-container="contact">
+                <form class="contact-form" aria-label="Formulario de contacto">
+                    <div class="field-group">
+                        <label for="contacto-nombre">Nombre completo</label>
+                        <input type="text" id="contacto-nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+                    <div class="field-group">
+                        <label for="contacto-email">Correo electrónico</label>
+                        <input type="email" id="contacto-email" name="email" required placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="field-group">
+                        <label for="contacto-mensaje">Mensaje</label>
+                        <textarea id="contacto-mensaje" name="mensaje" rows="5" placeholder="Cuéntame en qué puedo ayudarte" required></textarea>
+                    </div>
+                    <div class="field-group consent">
+                        <input type="checkbox" id="contacto-consentimiento" name="consentimiento" required>
+                        <label for="contacto-consentimiento">He leído y acepto el aviso legal y la política de privacidad.</label>
+                    </div>
+                    <button type="submit" class="button primary">Enviar mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Datos de contacto</h3>
+                        <ul>
+                            <li><span>Teléfono:</span> <a href="tel:+34660000123">+34 660 000 123</a></li>
+                            <li><span>Email:</span> <a href="mailto:hola@laurabenitezpsicologia.com">hola@laurabenitezpsicologia.com</a></li>
+                            <li><span>Dirección:</span> Carrer de Verdi 120, 08012 Barcelona</li>
+                        </ul>
+                    </div>
+                    <div class="map-card">
+                        <h3>Cómo llegar</h3>
+                        <iframe title="Mapa de la consulta" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.466562998483!2d2.152413176036546!3d41.40687249600236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ac17afdb4d%3A0x6f9f4e3b6bfb6f0!2sGr%C3%A0cia%2C%20Barcelona!5e0!3m2!1es!2es!4v1700000000000"></iframe>
+                        <img src="../assets/images/map-placeholder.svg" alt="Mapa ilustrado de la consulta" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-name">Laura Benítez Psicología</span>
+                <p>Acompañamiento terapéutico integrativo para personas, parejas y familias. Presencial en Barcelona y online.</p>
+            </div>
+            <div class="footer-links">
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-meta">
+                <a href="legal.html">Aviso legal y privacidad</a>
+                <a href="../en/contact.html">English version</a>
+                <p>© 2025 Laura Benítez · Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('#menu');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navMenu.toggleAttribute('data-open');
+        });
+    }
+    </script>
+</body>
+</html>

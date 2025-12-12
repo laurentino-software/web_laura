@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Artículos y recursos de salud mental: mindfulness, relaciones, ansiedad y bienestar emocional.">
+    <title>Blog y recursos · Laura Benítez Psicología</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Ir al contenido principal</a>
+
+    <header class="site-header" id="top">
+        <nav class="primary-nav" aria-label="Idioma y navegación principal">
+            <div class="brand">
+                <img src="../assets/images/hero-wave.svg" alt="Logotipo en forma de onda" class="brand-mark" loading="lazy">
+                <span class="brand-name">Laura Benítez Psicología</span>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+            <ul class="nav-links" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="blog.html" aria-current="page">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="legal.html">Aviso legal</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="../en/blog.html" hreflang="en" lang="en">English</a>
+                <span aria-hidden="true">·</span>
+                <span class="active" lang="es">Español</span>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="section" id="blog">
+            <div class="section-header">
+                <div class="section-pretitle">Blog y recursos</div>
+                <h2>Cuida tu bienestar con contenido seleccionado</h2>
+                <p>Artículos, prácticas guiadas y guías descargables para acompañar tu proceso entre sesiones y profundizar en conceptos clave.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="../assets/images/blog-breathing.svg" alt="Ilustración de respiración consciente" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-tag">Mindfulness</span>
+                        <h3>Respira y regula: guía práctica de respiración diafragmática</h3>
+                        <p>Aprende a incorporar micro-pausas en tu día para bajar la activación del sistema nervioso. Incluye audio descargable y hoja de seguimiento.</p>
+                        <a class="text-link" href="#">Leer artículo</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="../assets/images/blog-relationships.svg" alt="Ilustración de pareja de la mano" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-tag">Relaciones</span>
+                        <h3>Comunicación no violenta en pareja: 4 pasos para escucharnos mejor</h3>
+                        <p>Un marco sencillo para expresar necesidades, validar emociones y fortalecer el vínculo desde la empatía y el respeto mutuo.</p>
+                        <a class="text-link" href="#">Descargar guía</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="../assets/images/blog-anxiety.svg" alt="Ilustración abstracta sobre ansiedad" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-tag">Ansiedad</span>
+                        <h3>Kit de emergencia emocional: recursos para momentos de crisis</h3>
+                        <p>Herramientas de regulación sensorial, auto-instrucciones y rituales breves para sostenerte cuando la ansiedad se intensifica.</p>
+                        <a class="text-link" href="#">Escuchar podcast</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-name">Laura Benítez Psicología</span>
+                <p>Acompañamiento terapéutico integrativo para personas, parejas y familias. Presencial en Barcelona y online.</p>
+            </div>
+            <div class="footer-links">
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-meta">
+                <a href="legal.html">Aviso legal y privacidad</a>
+                <a href="../en/blog.html">English version</a>
+                <p>© 2025 Laura Benítez · Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('#menu');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navMenu.toggleAttribute('data-open');
+        });
+    }
+    </script>
+</body>
+</html>
