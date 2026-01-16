@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #3CB815;
+    --primary: #D1BFAE;
     --secondary: #F65005;
     --light: #F7F8FC;
     --dark: #111111;
@@ -395,5 +395,9 @@
 .text-price {
     font-size: 42px;
     font-weight: bold;
-    color: #3CB815;
+    color: #D1BFAE !important;
+}
+
+.text-primary {
+    color: #D1BFAE !important;
 }
