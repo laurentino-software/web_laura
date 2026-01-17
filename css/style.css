@@ -293,6 +293,7 @@
 
 .product-item {
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+  background-color: #f7f8fc !important
 }
 
 .product-item img {
@@ -398,6 +399,15 @@
   color: var(--light);
 }
 
+#cita {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  border-left: 4px solid var(--secondary);
+  padding-left: 1rem;
+  margin: 0;
+}
+
 .footer .copyright a:hover {
   color: var(--primary);
 }
@@ -421,6 +431,10 @@
   color: #2E5240 !important;
 }
 
-.kkk {
+.padding-left-0 {
   padding-left: 0px;
+}
+
+.laura1 {
+  background-color: #0000ff !important;
 }
