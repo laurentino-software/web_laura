@@ -106,14 +106,15 @@
 
 .navbar .navbar-nav .nav-link {
   padding: 25px 15px;
-  color: #555555;
+  color: #f5f5e7;
   font-weight: 500;
   outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--dark);
+  color: #ffffff;
+  font-weight: bold;
 }
 
 @media (max-width: 991.98px) {
