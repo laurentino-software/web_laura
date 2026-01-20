@@ -519,6 +519,15 @@
   color: #6b7a55 !important;
 }
 
+/* Asegurar que los colores de la marca se apliquen dentro del navbar (mayor especificidad) */
+.navbar .navbar-brand .color-verdejo {
+  color: #c9dfaa;
+}
+
+.navbar .navbar-brand .brand-name {
+  color: #6b7a55 !important;
+}
+
 @media (max-width: 576px) {
   .brand-subtitle {
     font-size: 0.8rem;
