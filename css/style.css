@@ -497,3 +497,48 @@
     /* pantallas pequeñas */
   }
 }
+
+/* Verde suave para acentos */
+.color-verdejo {
+  color: #c9dfaa;
+}
+
+/* Subtítulo de la marca (navbar) - discreto y responsive */
+.brand-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0.1rem !important;
+  opacity: 0.95;
+}
+
+/* Color del nombre 'Laura' — menos blanco, acompaña a .color-verdejo */
+.brand-name {
+  /* Tono verde-grisáceo que acompaña a #bdd39c sin competir */
+  color: #6b7a55 !important;
+}
+
+@media (max-width: 576px) {
+  .brand-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Enlaces sobre fondo primario: asegurar visibilidad sin tocar el fondo */
+.bg-primary a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.bg-primary a:hover,
+.bg-primary a:focus {
+  color: #e6f2ff;
+  text-decoration: underline;
+}
