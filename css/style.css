@@ -469,6 +469,16 @@
   .carousel-control-next-icon {
     margin-right: 0.5rem;
   }
+
+  #sobre-mi-text {
+    margin-top: -.5rem;
+    margin-left: 2rem;
+    max-width: 90%;
+  }
+
+  #sobre-mi-foto {
+    margin-top: -5.5rem;
+  }
 }
 
 /* Bajar iconos de los controles del carrusel para no tapar texto */
