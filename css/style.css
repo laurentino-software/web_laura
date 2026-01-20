@@ -479,3 +479,10 @@
     /* pantallas pequeñas */
   }
 }
+
+@media (max-width: 576px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    margin: 0 0.5rem; /* pequeño margen horizontal solo en móviles */
+  }
+}
