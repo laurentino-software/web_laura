@@ -461,6 +461,14 @@
     margin-left: 1rem;
     /* ajusta si quieres más o menos */
   }
+
+  .carousel-control-prev-icon {
+    margin-left: 0.5rem;
+  }
+
+  .carousel-control-next-icon {
+    margin-right: 0.5rem;
+  }
 }
 
 /* Bajar iconos de los controles del carrusel para no tapar texto */
@@ -477,12 +485,5 @@
   .carousel-control-next-icon {
     top: 180px;
     /* pantallas pequeñas */
-  }
-}
-
-@media (max-width: 576px) {
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    margin: 0 0.5rem; /* pequeño margen horizontal solo en móviles */
   }
 }
