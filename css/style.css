@@ -454,3 +454,28 @@
   border-color: rgba(255, 255, 255, 1) !important;
   box-shadow: none !important;
 }
+
+/* Pequeño margen para #cita en móviles */
+@media (max-width: 576px) {
+  #cita {
+    margin-left: 1rem;
+    /* ajusta si quieres más o menos */
+  }
+}
+
+/* Bajar iconos de los controles del carrusel para no tapar texto */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: relative;
+  top: 300px;
+  /* ajustar valor si quieres más o menos separación */
+}
+
+@media (max-width: 768px) {
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    top: 180px;
+    /* pantallas pequeñas */
+  }
+}
