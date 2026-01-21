@@ -376,6 +376,10 @@
   color: #999999;
 }
 
+.footer a {
+  color: var(--light);
+}
+
 .footer .btn.btn-link {
   display: block;
   margin-bottom: 5px;
@@ -581,4 +585,12 @@
   font-size: 1.25rem;
   width: 100%;
   align-content: center;
+}
+
+#footer {
+  margin-top: 1rem !important;
+}
+
+.footer-top {
+  margin-top: 1rem !important;
 }
