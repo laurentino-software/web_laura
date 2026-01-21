@@ -104,8 +104,11 @@
     // Cookie Management
     function loadDoctoralia() {
         if ($("#zl-widget-container").length && !$("#zl-widget-s").length) {
+            var isEnglish = $("html").attr("lang") === "en";
+            var widgetTitle = isEnglish ? "Medical appointment booking widget" : "Widget de reserva de citas médicas";
+            
             // Remove placeholder if it exists
-            $("#zl-widget-container").html('<a id="zl-url" class="zl-url" href="https://www.doctoralia.es/laura-rebollo/psicologo/alcala-de-henares" rel="nofollow" data-zlw-doctor="laura-rebollo" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="Widget de reserva de citas médicas">Laura Rebollo - Doctoralia.es</a>');
+            $("#zl-widget-container").html('<a id="zl-url" class="zl-url" href="https://www.doctoralia.es/laura-rebollo/psicologo/alcala-de-henares" rel="nofollow" data-zlw-doctor="laura-rebollo" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="' + widgetTitle + '">Laura Rebollo - Doctoralia.es</a>');
             
             // Inject script
             (function($_x, _s, id) {
@@ -136,7 +139,7 @@
 
     function showPlaceholder() {
         if ($("#zl-widget-container").length) {
-            var isEnglish = window.location.pathname.includes("index-en.html");
+            var isEnglish = $("html").attr("lang") === "en";
             var title = isEnglish ? "Widget blocked for privacy" : "Widget bloqueado por privacidad";
             var text = isEnglish ? "To book your appointment through the Doctoralia widget, you must accept third-party cookies." : "Para reservar tu cita a través del widget de Doctoralia, debes aceptar las cookies de terceros.";
             var btn = isEnglish ? "Accept cookies and view widget" : "Aceptar cookies y ver widget";
