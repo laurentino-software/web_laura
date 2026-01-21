@@ -1,7 +1,6 @@
 (function ($) {
     "use strict";
 
-    // Spinner
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -11,12 +10,8 @@
     };
     spinner();
     
-    
-    // Initiate the wowjs
     new WOW().init();
 
-
-    // Fixed Navbar
     $(window).scroll(function () {
         if ($(window).width() < 992) {
             if ($(this).scrollTop() > 45) {
@@ -33,8 +28,6 @@
         }
     });
     
-    
-    // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
@@ -47,8 +40,6 @@
         return false;
     });
 
-
-    // Testimonials carousel
     $(".testimonial-carousel").each(function () {
         var isCita = $(this).attr("id") === "cita";
         $(this).owlCarousel({
@@ -80,7 +71,6 @@
         });
     });
 
-    // Update testimonial height for relative owl-nav positioning
     function updateTestimonialHeight() {
         $(".testimonial-carousel").each(function () {
             var $carousel = $(this);
@@ -96,21 +86,18 @@
     }
 
     $(window).on("load resize", function () {
-        setTimeout(updateTestimonialHeight, 200); // Give OwlCarousel time to settle
+        setTimeout(updateTestimonialHeight, 200);
     });
     
     $(".testimonial-carousel").on("translated.owl.carousel", updateTestimonialHeight);
 
-    // Cookie Management
     function loadDoctoralia() {
         if ($("#zl-widget-container").length && !$("#zl-widget-s").length) {
             var isEnglish = $("html").attr("lang") === "en";
             var widgetTitle = isEnglish ? "Medical appointment booking widget" : "Widget de reserva de citas médicas";
             
-            // Remove placeholder if it exists
             $("#zl-widget-container").html('<a id="zl-url" class="zl-url" href="https://www.doctoralia.es/laura-rebollo/psicologo/alcala-de-henares" rel="nofollow" data-zlw-doctor="laura-rebollo" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="' + widgetTitle + '">Laura Rebollo - Doctoralia.es</a>');
             
-            // Inject script
             (function($_x, _s, id) {
                 var js, fjs = $_x.getElementsByTagName(_s)[0];
                 if (!$_x.getElementById(id)) {
