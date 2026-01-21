@@ -51,7 +51,7 @@
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 5000,
         margin: 25,
         loop: true,
         center: true,
