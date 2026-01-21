@@ -458,8 +458,8 @@
 /* Pequeño margen para #cita en móviles */
 @media (max-width: 576px) {
   #cita {
-    margin-left: 1rem;
-    /* ajusta si quieres más o menos */
+    margin-left: 0rem;
+    padding-right: 1rem !important;
   }
 
   .carousel-control-prev-icon {
@@ -471,14 +471,26 @@
   }
 
   #sobre-mi-text {
-    margin-top: -.5rem;
-    margin-left: 2rem;
-    max-width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 1.0rem;
+    margin-left: 1rem;
+    max-width: 95%;
   }
 
-  #sobre-mi-foto {
-    margin-top: -5.5rem;
+  #sobre-mi-foto{
+    margin-left: 0.75rem;
   }
+
+  #caracteristicas {
+    padding-top: 2rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  #tarifas{
+    padding-bottom: 0rem !important;
+  }
+  
 }
 
 /* Bajar iconos de los controles del carrusel para no tapar texto */
@@ -509,7 +521,7 @@
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1;
-  margin-bottom: 0.1rem !important;
+  margin-bottom: 0.4rem !important;
   opacity: 0.95;
 }
 
