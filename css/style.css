@@ -330,10 +330,14 @@
 }
 
 .testimonial-carousel .owl-nav {
-  margin-top: 40px;
+  margin-top: calc(var(--testimonial-height, 0px) * 0.1);
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
+}
+
+#cita .owl-nav {
+  display: none !important;
 }
 
 .testimonial-carousel .owl-nav .owl-prev,

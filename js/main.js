@@ -49,30 +49,54 @@
 
 
     // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 5000,
-        margin: 25,
-        loop: true,
-        center: true,
-        dots: false,
-        nav: true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
+    $(".testimonial-carousel").each(function () {
+        var isCita = $(this).attr("id") === "cita";
+        $(this).owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            margin: 25,
+            loop: true,
+            center: true,
+            dots: false,
+            nav: !isCita,
+            navText: [
+                '<i class="bi bi-chevron-left"></i>',
+                '<i class="bi bi-chevron-right"></i>'
+            ],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
             }
-        }
+        });
     });
+
+    // Update testimonial height for relative owl-nav positioning
+    function updateTestimonialHeight() {
+        $(".testimonial-carousel").each(function () {
+            var $carousel = $(this);
+            var $activeItem = $carousel.find(".owl-item.active .testimonial-item");
+            if ($activeItem.length === 0) {
+                $activeItem = $carousel.find(".testimonial-item").first();
+            }
+            if ($activeItem.length) {
+                var height = $activeItem.outerHeight();
+                $carousel.get(0).style.setProperty("--testimonial-height", height + "px");
+            }
+        });
+    }
+
+    $(window).on("load resize", function () {
+        setTimeout(updateTestimonialHeight, 200); // Give OwlCarousel time to settle
+    });
+    
+    $(".testimonial-carousel").on("translated.owl.carousel", updateTestimonialHeight);
 
     
 })(jQuery);
