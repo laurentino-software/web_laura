@@ -317,6 +317,20 @@
   transition: 0.5s;
 }
 
+.testimonial-carousel .owl-stage {
+  display: flex;
+}
+
+.testimonial-carousel .owl-item {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.testimonial-carousel .testimonial-item {
+  height: 100%;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+}
+
 .testimonial-carousel .owl-item.center .testimonial-item {
   background: var(--primary) !important;
 }
@@ -334,10 +348,6 @@
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
-}
-
-#cita .owl-nav {
-  display: none !important;
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
@@ -402,15 +412,6 @@
   color: var(--light);
 }
 
-#cita {
-  font-family: 'Lora', serif;
-  font-style: italic;
-  font-size: 1.25rem;
-  width: 100%;
-  align-content: center;
-
-}
-
 .footer .copyright a:hover {
   color: var(--primary);
 }
@@ -460,14 +461,7 @@
   box-shadow: none !important;
 }
 
-/* Pequeño margen para #cita en móviles */
 @media (max-width: 576px) {
-
-  #cita {
-    margin-top: 2rem;
-    margin-left: 0rem;
-    padding-right: 1rem !important;
-  }
 
   .carousel-control-prev-icon {
     margin-left: 0.5rem;
@@ -495,9 +489,9 @@
   }
 
   #tarifas{
-    padding-bottom: 0rem !important;
+    padding-bottom: 2rem !important;
   }
-
+  
   #resenas {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -579,4 +573,12 @@
 .bg-primary a:focus {
   color: #e6f2ff;
   text-decoration: underline;
+}
+
+.cita-font {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  width: 100%;
+  align-content: center;
 }
