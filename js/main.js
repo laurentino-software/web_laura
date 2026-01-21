@@ -127,9 +127,9 @@
     function showPlaceholder() {
         if ($("#zl-widget-container").length) {
             var isEnglish = $("html").attr("lang") === "en";
-            var title = isEnglish ? "Widget blocked for privacy" : "Widget bloqueado por privacidad";
+            var title = isEnglish ? "Privacy Guarantee" : "Garantía de privacidad";
             var text = isEnglish ? "To book your appointment through the Doctoralia widget, you must accept third-party cookies." : "Para reservar tu cita a través del widget de Doctoralia, debes aceptar las cookies de terceros.";
-            var btn = isEnglish ? "Accept cookies and view widget" : "Aceptar cookies y ver widget";
+            var btn = isEnglish ? "Accept cookies and access Doctoralia" : "Aceptar cookies y acceder a Doctoralia";
             var direct = isEnglish ? "Or you can book directly at" : "O puedes reservar directamente en";
             
             $("#zl-widget-container").html(`

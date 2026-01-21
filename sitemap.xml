@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.laurarebollopsicologa.es/</loc>
+    <lastmod>2026-01-21</lastmod>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.laurarebollopsicologa.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.laurarebollopsicologa.es/en/"/>
+  </url>
+  <url>
+    <loc>https://www.laurarebollopsicologa.es/en/</loc>
+    <lastmod>2026-01-21</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.laurarebollopsicologa.es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.laurarebollopsicologa.es/en/"/>
+  </url>
+</urlset>

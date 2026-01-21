@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /aviso-legal.html
+Disallow: /politica-privacidad.html
+Disallow: /politica-cookies.html
+Disallow: /en/legal-notice.html
+Disallow: /en/privacy-policy.html
+Disallow: /en/cookie-policy.html
+
+Sitemap: https://www.laurarebollopsicologa.es/sitemap.xml
