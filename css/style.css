@@ -169,6 +169,13 @@
   padding-bottom: 2.5rem;
 }
 
+@media (min-width: 992px) {
+  .carousel-caption {
+    align-items: center;
+    padding-bottom: 0;
+  }
+}
+
 .carousel-caption .btn {
   margin-top: 4rem !important;
 }
