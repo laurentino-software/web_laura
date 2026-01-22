@@ -522,7 +522,7 @@ a {
   margin-bottom: 5px;
   padding: 0;
   text-align: left;
-  color: #c9dfaa;
+  color: var(--light);
   font-weight: normal;
   text-transform: capitalize;
   transition: 0.3s;
@@ -615,7 +615,7 @@ a {
     margin-left: 0.75rem;
   }
 
-  #caracteristicas {
+  #especialidades {
     padding-top: 2rem !important;
     margin-top: 0rem !important;
     margin-bottom: 0rem !important;
@@ -714,14 +714,6 @@ a {
   font-size: 1.25rem;
   width: 100%;
   align-content: center;
-}
-
-#footer {
-  margin-top: 1rem !important;
-}
-
-.footer-top {
-  margin-top: 1rem !important;
 }
 
 /* Cookie Banner */
