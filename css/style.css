@@ -621,6 +621,16 @@ a {
     padding-bottom: 0rem;
   } 
 }
+.especialidad-icon {
+  width: 40%;
+  max-width: 120px;
+  transition: width 0.2s ease;
+}
+@media (max-width: 768px) {
+  .especialidad-icon {
+    width: 48%;
+  }
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   position: relative;
