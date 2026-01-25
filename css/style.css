@@ -1,5 +1,5 @@
 :root {
-  --primary: #2E5240;
+  --primary: #9ead7a;
   --primary-light: #6b7a55;
   --primary-shadow: rgba(46, 82, 64, 0.5);
   --verdejo: #c9dfaa;
@@ -234,6 +234,31 @@ a {
   height: 45px;
   border-bottom: 1px solid var(--shadow-color);
 }
+
+.top-bar small {
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) and (max-width: 1420px) {
+  .top-bar .px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .top-bar .ms-4 {
+    margin-left: 0.75rem !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .top-bar .col-lg-6.text-start {
+    display: none !important;
+  }
+  .top-bar .col-lg-6.text-end {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
 .navbar .dropdown-toggle::after {
   border: none;
   content: "\f107";
