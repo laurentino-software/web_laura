@@ -698,13 +698,7 @@ a {
   color: var(--link-hover);
   text-decoration: underline;
 }
-.cita-font {
-  font-family: 'Lora', serif;
-  font-style: italic;
-  font-size: 1.25rem;
-  width: 100%;
-  align-content: center;
-}
+/* .cita-font removed — styles no longer used */
 #cookie-banner {
   position: fixed;
   bottom: 0;

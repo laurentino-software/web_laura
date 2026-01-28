@@ -41,15 +41,15 @@
     });
 
     $(".testimonial-carousel").each(function () {
-        var isCita = $(this).attr("id") === "cita";
         $(this).owlCarousel({
             autoplay: true,
+            autoplayTimeout: 10000, // tiempo entre cambios (ms) — aumentar para que duren más
             smartSpeed: 1000,
             margin: 25,
             loop: true,
             center: true,
             dots: false,
-            nav: !isCita,
+            nav: false,
             navText: [
                 '<i class="bi bi-chevron-left"></i>',
                 '<i class="bi bi-chevron-right"></i>'
